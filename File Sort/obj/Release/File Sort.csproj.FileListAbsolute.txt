@@ -1,0 +1,10 @@
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\bin\Release\File Sort.exe.config
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\bin\Release\File Sort.exe
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\bin\Release\File Sort.pdb
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File_Sort.Form1.resources
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File_Sort.Properties.Resources.resources
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File Sort.csproj.GenerateResource.cache
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File Sort.csproj.CoreCompileInputs.cache
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File Sort.exe
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File Sort.pdb
+C:\Users\Kevstrosky\source\repos\File Sort\File Sort\obj\Release\File Sort.csproj.AssemblyReference.cache

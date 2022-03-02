@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File Sort", "File Sort\File Sort.csproj", "{4BC40430-C7BD-4AEC-983A-56ECDE770D87}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Organizador de archivos", "Organizador de archivos\Organizador de archivos.vdproj", "{7BAE916F-15B8-48FD-8E5D-4A6905FB830E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BC40430-C7BD-4AEC-983A-56ECDE770D87}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC40430-C7BD-4AEC-983A-56ECDE770D87}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{4BC40430-C7BD-4AEC-983A-56ECDE770D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC40430-C7BD-4AEC-983A-56ECDE770D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BAE916F-15B8-48FD-8E5D-4A6905FB830E}.Debug|Any CPU.ActiveCfg = Debug
+		{7BAE916F-15B8-48FD-8E5D-4A6905FB830E}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90CC7789-960F-4C6A-BFB3-485519358D6A}
+	EndGlobalSection
+EndGlobal
