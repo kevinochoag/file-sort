@@ -71,10 +71,10 @@ namespace File_Sort
             this.label2.TabIndex = 2;
             this.label2.Text = "Source folder";
             // 
-            // selectSourceFolder
+            // BtnSelectSource
             // 
             this.BtnSelectSource.Location = new System.Drawing.Point(182, 53);
-            this.BtnSelectSource.Name = "selectSourceFolder";
+            this.BtnSelectSource.Name = "BtnSelectSource";
             this.BtnSelectSource.Size = new System.Drawing.Size(146, 23);
             this.BtnSelectSource.TabIndex = 3;
             this.BtnSelectSource.Text = "Select folder";
@@ -99,10 +99,10 @@ namespace File_Sort
             this.label4.TabIndex = 5;
             this.label4.Text = "Target folder";
             // 
-            // selectTargetFolder
+            // button2
             // 
             this.button2.Location = new System.Drawing.Point(182, 82);
-            this.button2.Name = "selectTargetFolder";
+            this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 23);
             this.button2.TabIndex = 6;
             this.button2.Text = "Select folder";
@@ -118,10 +118,10 @@ namespace File_Sort
             this.label5.TabIndex = 7;
             this.label5.Text = "Path..";
             // 
-            // SortFileButton
+            // button3
             // 
             this.button3.Location = new System.Drawing.Point(204, 141);
-            this.button3.Name = "sortFileButton";
+            this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 23);
             this.button3.TabIndex = 8;
             this.button3.Text = "Ready";
@@ -154,6 +154,7 @@ namespace File_Sort
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "File Sort";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

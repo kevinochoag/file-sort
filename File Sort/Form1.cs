@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,14 +49,15 @@ namespace File_Sort
 
         private void sortFileButton(object sender, EventArgs e) //This method sends the files selected by the data type in the combo box from the source folder to the target folder
         {
-            String command = "move " + sourceFolder.SelectedPath+@"\"+"*"+"."+ comboBox1.Text +" "+ targetFolder.SelectedPath + @"\";
-            ExecuteCommand(command);
+            //String command = "move " + sourceFolder.SelectedPath+@"\"+"*"+"."+ comboBox1.Text +" "+ targetFolder.SelectedPath + @"\";
+            ExecuteCommand("dir /B /A");
             MessageBox.Show("All files have been transferred!");
 
         }
         static void ExecuteCommand(String command) //This method execute the command line that we send to it
         {
-            System.Diagnostics.ProcessStartInfo procStartInfo = new System.Diagnostics.ProcessStartInfo("cmd", "/c " + command);
+
+            System.Diagnostics.ProcessStartInfo procStartInfo = new System.Diagnostics.ProcessStartInfo("cmd", "/c/users/kevstrosky/desktop " + command);
             procStartInfo.RedirectStandardOutput = true;
             procStartInfo.UseShellExecute = false;
             procStartInfo.CreateNoWindow = false; //This line of code does not allow the cmd window to open
@@ -64,6 +66,24 @@ namespace File_Sort
             proc.Start();
             string result = proc.StandardOutput.ReadToEnd();
             Console.WriteLine(result);
+            char[] charSeparators = new char[] { '\n', '.' };
+            string[] subs = result.Split(charSeparators, StringSplitOptions.RemoveEmptyEntries);
+            
+            string path = @"c:\Users\Kevstrosky\desktop\test.txt";
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                    Console.WriteLine("The array contains the following values:");
+                    for (int i = subs.GetLowerBound(0); i <= subs.GetUpperBound(0); i++)    
+                     sw.WriteLine("[{0,2}]: {1}", i, subs[i]);
+
+            }
+
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
